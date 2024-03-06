@@ -1,2 +1,2 @@
-# TCC-Diego---Detec-o-de-Constela-es
+# TCC-Diego-DeteccaoDeConstelacoes
 Detecção de Consteçaões usando processamento de imagens
