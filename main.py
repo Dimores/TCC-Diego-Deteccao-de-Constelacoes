@@ -8,7 +8,6 @@ Trabalho inicial -
 1) Peguei uma imagem maior, cortei ela, e gerei a imagem menor.
 2) Testei todos os métodos de Template matching.
 3) Plotei a imagem com a área do matching na tela.
-4)
 '''
 
 img = cv.imread('testeImgs/testeMaior.jpg', 0)
