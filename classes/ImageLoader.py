@@ -79,14 +79,3 @@ class ImageLoader:
                 print("Erro ao carregar:", img_name)
 
         return imagesGray
-
-    
-
-
-    
-    
-
-
-
-
-

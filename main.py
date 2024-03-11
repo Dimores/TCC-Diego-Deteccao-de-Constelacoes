@@ -16,16 +16,32 @@ Segundo trabalho -
 3) Testar
 '''
 def main():
+    # ----Teste 1----
     img = ImageLoader.loadImageGray("testeMaior")
     assert img is not None, "file could not be read, check with os.path.exists()"
     img2 = img.copy()
     template = ImageLoader.loadImageGray("testeMenor")
     assert template is not None, "file could not be read, check with os.path.exists()"
 
+    # ----Teste 2----
     # img = ImageLoader.loadImageGray("andromedaMeu")
     # assert img is not None, "file could not be read, check with os.path.exists()"
     # img2 = img.copy()
     # template = ImageLoader.loadImageGray("andromedaGit")
+    # assert template is not None, "file could not be read, check with os.path.exists()"
+
+    # ----Teste 3----
+    # img = ImageLoader.loadImageGray("leaoMeu")
+    # assert img is not None, "file could not be read, check with os.path.exists()"
+    # img2 = img.copy()
+    # template = ImageLoader.loadImageGray("leaoGit")
+    # assert template is not None, "file could not be read, check with os.path.exists()"
+
+    # ----Teste 4----
+    # img = ImageLoader.loadImageGray("fenixMeu")
+    # assert img is not None, "file could not be read, check with os.path.exists()"
+    # img2 = img.copy()
+    # template = ImageLoader.loadImageGray("fenixGit")
     # assert template is not None, "file could not be read, check with os.path.exists()"
 
     w, h = template.shape[::-1]
