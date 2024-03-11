@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
-from classes.ShowImages import ShowImages
+from classes import *
 
 # Testando template matching básico
 '''
@@ -15,15 +15,19 @@ Segundo trabalho -
 2) Pegar uma imagem maior que a do Github, da mesma região.
 3) Testar
 '''
-
-
 def main():
-    img = cv2.imread('testeImgs/testeMaior.jpg', 0)
+    img = ImageLoader.loadImageGray("testeMaior")
     assert img is not None, "file could not be read, check with os.path.exists()"
-    ShowImages.showSingleImageGray(img, "Testando a classe", (10,10))
     img2 = img.copy()
-    template = cv2.imread('testeImgs/testeMenor.jpg', 0)
+    template = ImageLoader.loadImageGray("testeMenor")
     assert template is not None, "file could not be read, check with os.path.exists()"
+
+    # img = ImageLoader.loadImageGray("andromedaMeu")
+    # assert img is not None, "file could not be read, check with os.path.exists()"
+    # img2 = img.copy()
+    # template = ImageLoader.loadImageGray("andromedaGit")
+    # assert template is not None, "file could not be read, check with os.path.exists()"
+
     w, h = template.shape[::-1]
 
     # All the 6 methods for comparison in a list
@@ -54,9 +58,6 @@ def main():
         plt.suptitle(meth)
 
         plt.show()
-
-    
-
 
 if __name__ == "__main__":
     main()
